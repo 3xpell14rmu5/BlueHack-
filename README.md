@@ -1,4 +1,4 @@
-# BlueStorm
+# BlueHack
 A tool which perform deauthentication attack on unpaired bluetooth devices.
 
 # Meaning of Unpaired devices
