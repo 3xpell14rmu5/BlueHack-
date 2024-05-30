@@ -1,5 +1,5 @@
 # BlueHack
-# A tool which perform deauthentication attack on unpaired bluetooth devices.
+# A tool which perform deauthentication attack on bluetooth devices.
 
 import os
 import time
