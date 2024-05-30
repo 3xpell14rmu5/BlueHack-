@@ -1,19 +1,5 @@
 # BlueHack
-A tool which perform deauthentication attack on unpaired bluetooth devices.
-
-# Meaning of Unpaired devices
-Those bluetooth devices which is paired but going to connect.
-
-# Key Features
-- Simple and clean menu.
-- Support keyboard interrupts.
-- Show scanned bluetooth devices in a borderless table.
-- Show bluetooth interfaces and its status and select to use that interface.
-- Simple and clean interface for deauthentication attack on target device.
-
-# OS Support
-- Kali Linux
-- Raspberry Pi OS
+A tool which perform deauthentication attack on bluetooth devices.
 
 # Setup
 Make sure the latest python and pip3 is installed on your system (Windows/Linux/MacOS).
@@ -21,22 +7,14 @@ Make sure the latest python and pip3 is installed on your system (Windows/Linux/
 # Install and Run
 ## 1. Run the following command to start terminal in root :
    ```
-   sudo su -
+   sudo su 
    ```
 ## 2. Run the following command to check bluetooth interfaces, BUS and its running status on your system :
    ```
    hciconfig
-   ```
-   - Check Interface, Bus and Running Status.
-   - Interface look like `hciX`.
-   - `X` is a number starts from 0 like `hci0`, `hci1` *etc.*.
-   - There are two types : `UART` and `USB`.
-   - `UART` is buit-in Bluetooth Interface and `USB` is external Bluetooth Interface like Adapter.
-   - There are commanly two types of Running Status : `DOWN` and `UP RUNNING`.
-   - `DOWN` means the interface is `OFF` and `UP RUNNING` means the interface is `ON`. 
-## 3. Run the following command to start bluetooth interface if it is not started :
-   ```
-   hciconfig hciX up
+   hciconfig hci0 up
+   service bluetooth restart
+   python3 BlueHack.py
    ```
 ## 4. Download or Clone the Repository.<br>
 ## 5. Open the folder and run the *BlueStorm.py* file by type the following command :
