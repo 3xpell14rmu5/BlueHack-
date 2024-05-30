@@ -7,20 +7,14 @@ Make sure the latest python and pip3 is installed on your system (Windows/Linux/
 # Install and Run
 ## 1. Run the following command to start terminal in root :
    ```
-   sudo su 
-   ```
-## 2. Run the following command to check bluetooth interfaces, BUS and its running status on your system :
-   ```
+   sudo su
    hciconfig
    hciconfig hci0 up
    service bluetooth restart
+   git clone https://github.com/3xpell14rmu5/BlueHack-.git
+   cd BlueHack-
    python3 BlueHack.py
    ```
-## 4. Download or Clone the Repository.<br>
-## 5. Open the folder and run the *BlueStorm.py* file by type the following command :
-```
-python3 BlueStorm.py
-```
 # For Better Results
 - Use a Bluetooth Adapter for better results of the tool.
 - Make sure that Bluetooth Adapter supports `HCI` mode.
