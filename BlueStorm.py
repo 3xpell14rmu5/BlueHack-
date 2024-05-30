@@ -1,6 +1,5 @@
-# BlueStorm
+# BlueHack
 # A tool which perform deauthentication attack on unpaired bluetooth devices.
-# Author - WireBits
 
 import os
 import time
